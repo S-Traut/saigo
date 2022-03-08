@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "dotosb": "^1.3.2",
+    "ftgen": "^1.0.0"
+  },
+  "name": "saigo",
+  "version": "1.0.0",
+  "main": "storyboard.js",
+  "devDependencies": {},
+  "scripts": {
+    "develop": "nodemon storyboard.js -q"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module"
+}
