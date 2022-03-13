@@ -8,7 +8,7 @@ export default class Background extends Effect {
   */
   setVignette(start, end) {
     const sprite = this.sb.createSprite('sb/v.png');
-    sprite.add('S', start, 480.0/1080);
+    sprite.add('S', start, 480.0 / 1080);
     sprite.add('F', [start, start + 1000], [0, 1]);
     sprite.add('F', [end - 1000, end], [1, 0]);
   }

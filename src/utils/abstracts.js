@@ -1,6 +1,14 @@
 export function addSection(sb, section) {
   const instance = new section(sb);
-  instance.generate();
+
+  if(instance.init)
+    instance.init();
+
+  if(instance.background)
+    instance.background();
+  
+  if(instance.foreground)  
+    instance.foreground();
 }
 
 export class Section {

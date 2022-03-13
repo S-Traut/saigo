@@ -9,16 +9,12 @@ export default class SectionIntroduction extends Section {
   start = 32;
   end = 10000;
 
-  generate() {
-    this.background();
-    this.foreground();
+  init() {
+    this.color = this.getEffect(PlainColor);
   }
 
   background() {
-
-    // Setting up the dark background
-    const color = this.getEffect(PlainColor);
-    color.set(this.start, this.end, COLOR.dark);
+    this.color.set(this.start, this.end, COLOR.dark);
   }
 
   foreground() {

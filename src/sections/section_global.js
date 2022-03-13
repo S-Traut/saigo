@@ -8,10 +8,8 @@ export default class SectionGlobal extends Section {
   start = 32;
   end = 225632;
 
-  generate() {
+  init() {
     this.bg = this.getEffect(Background);
-    this.background();
-    this.foreground();
   }
 
   background() {
